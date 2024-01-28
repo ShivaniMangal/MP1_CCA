@@ -15,7 +15,7 @@ def web_server_app():
         return socket.gethostname()
 
     elif request.method == 'POST':
-        subprocess.Popen(["python", "stress_cpu.py"])
+        subprocess.Popen(["python3", "stress_cpu.py"])
         return "Stress Test Started"
 
 
